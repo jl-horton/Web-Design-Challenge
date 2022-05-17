@@ -27,18 +27,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../data.html">Data</a></li>
+                <a class="nav-link active" aria-current="page" href="data.html">Data</a></li>
               <li class="nav-item">
-                <a class="nav-link" href="../Comparison.html">Comparison</a></li>
+                <a class="nav-link" href="Comparison.html">Comparison</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Visualisations
               </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="../Visualisations/Cloudiness.html">Cloudiness<a>
-                  <a class="dropdown-item" href="../Visualisations/Humidity.html">Humidity</a>
-                  <a class="dropdown-item" href="../Visualisations/Temperature.html">Temperature</a>
-                  <a class="dropdown-item" href="../Visualisations/Wind_Speed.html">Wind Speed</a>
+                  <a class="dropdown-item" href="Visualisations/Cloudiness.html">Cloudiness<a>
+                  <a class="dropdown-item" href="Visualisations/Humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="Visualisations/Temperature.html">Temperature</a>
+                  <a class="dropdown-item" href="Visualisations/Wind_Speed.html">Wind Speed</a>
                 </div>
               </a>    
             </ul>
@@ -47,21 +47,38 @@
     </nav>
    <!-- End of Navbar-->
  
-   <!-- Text on cloudiness page -->
+   <!-- Comparisons -->
    <div class="container">
-    <section class="row">
-      <div class="col-md-8">
-        <article class="description-content">
-          <h1 class="description-header">Lattitude v Humidity</h1>
-          <hr class="description-hr"/>
-          <img src="../Assets/lat_humidity.png" alt="" id="img-responsive"/>
-          <p>There is no strong relationship between humidity and lattitude. It appears that there may a higher chance of experiencing humidity at around zero degrees lattitude. </p>
-        </article>
+    <article class="description-content row">
+      <div class="col-md-12">
+        <h1 class="description-header">Comparison: Latitude vs X</h1>
+        <hr class="description-hr"/>
+        <p class="description-text">Click on a plot to get an in-depth analysis.</p>
       </div>
-      <div class="col-md-4">     
+      <div class="col-md-6">
+        <h2 class="comparison-header">vs. Max Temperature</h2>
+        <a href="Visualisations/Temperature.html"><img src="Assets/lat_temp.png" alt="Latitude vs. Max Temperature" class="comparison-image img-responsive"></a>
+        <hr class="visible-xs visible-sm">
+      </div>
+      <div class="col-md-6">
+        <h2 class="comparison-header">vs. Humidity</h2>
+        <a href="Visualisations/Humidity.html"><img src="Assets/lat_humidity.png" alt="Latitude vs. Humidity" class="comparison-image img-responsive"></a>
+        <hr class="visible-xs visible-sm">
+      </div>
+      <div class="col-md-6">
+        <h2 class="comparison-header">vs. Cloudiness</h2>
+        <a href="Visualisations/Cloudiness.html"><img src="Assets/lat_cloudiness.png" alt="Latitude vs. Cloudiness" class="comparison-image img-responsive"></a>
+        <hr class="visible-xs visible-sm">
+      </div>
+      <div class="col-md-6">
+        <h2 class="comparison-header">vs. Wind Speed</h2>
+        <a href="Visualisations/Wind_Speed.html"><img src="Assets/lat_wind_speed.png" alt="Latitude vs. Wind Speed" class="comparison-image img-responsive"></a>
+      </div>
+    </article>
+  </div>
       
         <!-- Visualisations -->
-        <section id="imageNav-area">
+        <!-- <section id="imageNav-area">
           <div class="imageNav-content">
             <h2 class="imageNav-header">Visualisations details</h2>
             <hr />
@@ -73,7 +90,7 @@
           </div>
         </div>
     </section>
-   </div>
+   </div> -->
      <!--End of visualisations-->
    <!--div-->
 </body>
